@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: montserrat;
+    box-sizing: border-box;
+  }
+  
+  body{
+    min-height: 100vh;
+    background-image: linear-gradient(120deg,#032c08,#63f5ac);
+  }
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    height: 80%;
+    background-color: rgba(214, 236, 218, 0.925);
+    overflow: hidden;
+    border-radius: 50px;
+  }
+ 
+  nav a {
+    float: right;
+    color: #080808;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+
+  nav a:hover {
+    background-color: rgb(56, 218, 15);
+    color: black;
+    
+  }
+  
+ 
+  nav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .login-form{
+    width: 360px;
+    background: #f1f1f1;
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .login-form h1{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .txtb{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+  }
+  
+  .txtb input{
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+  }
+  
+  .txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+  }
+  
+  .txtb span::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg,#3498db,#8e44ad);
+    transition: .5s;
+  }
+  
+  .focus + span::before{
+    top: -5px;
+  }
+  .focus + span::after{
+    width: 100%;
+  }
+  
+  .logbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg,#3498db,#8e44ad,#3498db);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  .logbtn:hover{
+    background-position: right;
+  }
+  
+  .bottom-text{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .pesquisa{
+    width: 400px;
+    height: 40px;
+  }
+
+  #texto{
+    width: 350px;
+    height: 40px;
+    float-left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  .btn{
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .search-box{
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    transform: translate(-50%,-50%);
+    background: grey;
+    height: 40px;
+    width: 700px;
+    border-radius: 40px;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(97, 253, 97),rgb(46, 167, 46) );
+  }
+
+  .search-btn{
+    color: #63f5ac;
+    position: absolute;
+    left: 95%;
+    bottom: 2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 20px;
+    transition: 0.5s;
+    width: 750px;
+  }
+
+  .fontegrande{
+    color: rgb(214, 236, 218, 0.925);
+    font-size: 50px;
+    margin-bottom: 700px;
+    margin-right: 1990px;
+    margin-top: 150px;
+  }
+
+  .icons{
+    width:232px;
+    height:300px;
+
+  }
+
+  .lbox{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+ul1{
+  width:880px;
+  list-style: none;
+  display: flex;
+  margin: 100px auto;
+  position: absolute;
+  top:200px;
+}
+
+.min{
+  width: 200px;
+  padding: 10px;
+  margin-top:20px;
+}
+
+.lbox:target{
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background: rgba(10,10,10,.7);
+  position: fixed;
+}
+
+.box_img{
+  width: 1000px;
+  margin: 150px auto;
+}
+
+.box_img2{
+  margin-left: 10%;
+  margin-top: 7%;
+}
+
+.box_img3{
+  margin-left: 12%;
+  margin-top: 14%;
+}
+
+.box_img4{
+  margin-left: 16%;
+  margin-top: 11%;
+}
+.btn{
+  color: #fff;
+  font-family: 'Arial';
+  text-decoration: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#prev{
+  left: 5%;
+  top: 45%;
+}
+
+#next{
+  right: 5%;
+  top: 45%;
+}
+
+#close{
+  top: 0;
+  right: 2%;
+}
+
+.box_img img{
+  opacity: 0;
+}
+
+.lbox:target .box_img img{
+  opacity: 1;
+  transition: opacity .4s linear;
+}
+
+.pag{
+  font-family: Arial;
+  font-size:40px;
+  color: #3498db;
+  position: relative;
+  top:10px;
+  left:340px;
+}
+
+.pag:active {
+color: rgb(97, 253, 97);
+}
+
+.pag:hover {
+  text-decoration: underline;
+}
+
+.min4{
+  height:270px;
+  margin-left:55px;
+}
+
+.min2{
+  height:300px;
+  margin-left:50px; 
+}
+
+.lupa{
+  color: rgb(19, 226, 37);
+  margin-left: 95%;
+  position: absolute;
+}
+
+.content{
+  margin-top:10%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  width:100%;
+  height:100vh;
+}
+
+.card{
+  background: #FFF;
+  box-shadow: 0px 2px 18px #26395342;
+  border-radius:15px;
+  width:600px;
+}
+
+.mediacard{
+  background: url("https://drogariaemcasa.com.br/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/d/o/dorflexmelhoprecodobrasil.png");
+  height:300px;
+  width:100%;
+}
+
+.topcard{
+  padding:20px;
+  padding-top:0px;
+}
+
+.bottomcard{
+  padding:20px;
+}
+
+.actions{
+  background:none;
+  border:none;
+  color:purple;
+  font-family: Arial;
+  font-size:15px;
+}
+
+h2.title{
+  font-family: Arial;
+  color: #2b3d59;
+}
+
+span.secondtext{
+  font-family: Arial;
+  color: #828fa1;
+}
+
+.bottomtext{
+  font-family: Arial;
+  color: #445b73;
+}
+
+.tabela{
+  border-color: rgb(78, 233, 78);
+  margin-top:10%;
+  margin-left:24%;
+  
+}
+
+.fonttab1{
+  font-family: Arial;
+  font-size: 20px;
+  color: rgb(0, 0, 0)
+}
+
+.fonttab2{
+  font-family: Arial;
+  font-size: 40px;
+  color:  rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.fonttab3{
+  font-family: Arial;
+  font-size:15px;
+  color: rgb(0, 0, 0);
+}
